@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4to Hache™ Official</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/logo_naranja.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Inicio del Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="linkNav">HOME</a></li>
+                <li><a href="./bio.html" class="linkNav">BIO</a></li>
+                <li><a href="./singles.html" class="linkNav">SINGLES</a></li>
+                <li><a href="./studio.html" class="linkNav">STUDIO</a></li>
+                <li><a href="#" class="linkNav">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <img src="../img/logo_negro3.png" width="250px" alt="logo_negro">
+        <div class="redes">
+            <a href="https://www.youtube.com/channel/UClSkuSQH6TTSssvnhBzIRBg" target="_blanck">
+                <i id="logoYoutube" class="bi bi-youtube"></i>
+            </a>
+            <a href="https://open.spotify.com/artist/25P86xpB1p0EMThTRi61ii" target="_blanck">
+                <i id="logoSpotify" class="bi bi-spotify"></i>
+            </a>
+            <a href="https://www.instagram.com/cuartohache4toh/?hl=es" target="_blanck">
+                <i id="logoInstagram" class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/cuartohache4toh/" target="_blanck">
+                <i id="logoFacebook" class="bi bi-facebook"></i>
+            </a>
+        </div>
+    </header>
+    <!-- Fin del Header -->
+    <main>
+        <section class="section_contacto">
+            <form class="form_contacto">
+                <div>
+                    <label for="nombreContacto">NOMBRE</label>
+                    <input type="text" placeholder="Escribe tu nombre" id="nombreContacto">
+                </div>
+                <div>
+                    <label for="mailContacto">EMAIL</label>
+                    <input type="text" placeholder="Escribe tu mail" id="mailContacto">
+                </div>
+                <div>
+                    <label for="paiscontacto">PAIS</label>
+                    <select name="pais" id="paiscontacto">
+                        <option value="">Elija su pais</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="españa">España</option>
+                        <option value="estadosunidos">Estados Unidos</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensajeContacto">MENSAJE</label>
+                    <textarea placeholder="Escribenos un mensaje" id="mensajeContacto"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Marcá esta casilla para suscribirte al newsletter oficial de <span style="font-weight: bold;"> Cuarto Hache </span>y estar al tanto de las ultimas novedades, nuevos lanzamientos y proximos shows.</label>
+                </div>
+                <div>
+                    <input type="reset" value="Borrar todo">
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Inicio del footer -->
+    <footer>
+        <div>
+            <p>@2022 <span class="textimp">CuartoHache™ </span>es propiedad de <span class="textimp">VeeSounds Records®</span> Buenos Aires. Argentina.</p>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+</body>
+
+</html>
