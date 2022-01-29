@@ -167,6 +167,7 @@ footer {
     align-items: center;
     margin: 0 auto;
 }
+
 .border {
     height: 369px;
     width: 290px;
@@ -288,6 +289,12 @@ footer {
 }
 .singles {
     width: 25%;
+    transition: transform 0.3s;
+}
+.singles:hover {
+    transform: scale(1.1,1.1);
+    z-index: 100;
+    box-shadow: 0 70px 63px -60px #000000;
 }
 
 /*CSS Studio*/
