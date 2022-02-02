@@ -23,9 +23,13 @@ header{
 @media only screen and (min-width: 577px) and (max-width: 991px){
     .navbar{
         max-height: initial;
+        width: 50%;
     }
     .imagen_logo {
         display: none;
+    }
+    .redes {
+        margin-left: 4rem;
     }
 }
 
