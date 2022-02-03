@@ -315,7 +315,9 @@ footer {
     box-shadow: 0 70px 63px -60px #000000;
 }
 
+
 /*CSS Studio*/
+
 
 /* .body_studio {
     display: grid;
@@ -461,8 +463,30 @@ footer {
     }
 }
 
-
+.titulo_prod {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.titulo_prod h3 {
+    color:#F2EFC4;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-weight: 600
+}
 .section_prod {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.imagen_herix {
+    object-fit: cover;
+}
+
+.imagen_shaman {
+    object-fit: cover;
+}
+
+/* .section_prod {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(9, 1fr);
@@ -508,9 +532,11 @@ footer {
     flex-direction: column;
     gap: 20px;
     padding: 10px;
-}
+} */
+
 
 /*CSS Contacto*/
+
 
 /* .body_contacto {
     display: grid;
@@ -573,7 +599,7 @@ footer {
 
 @media only screen and (max-width:576px) {
     body {
-        background-position-y: 90px;
+        background-position-y: 80px;
         background-size: 100%;
     }
     /*     body {
@@ -668,7 +694,7 @@ footer {
     .titulo_studio {
         display: none;
     }
-    .section_prod {
+    /* .section_prod {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(7, 1fr);
@@ -700,7 +726,7 @@ footer {
         flex-direction: column;
         gap: 0px;
         padding: 0px;
-    }
+    } */
 
 /* Media Querie Contacto MOBILE*/
 
@@ -829,7 +855,7 @@ footer {
     .titulo_studio {
         display: none;
     }
-    .section_prod {
+    /* .section_prod {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -862,7 +888,7 @@ footer {
         flex-direction: column;
         gap: 0px;
         padding: 0px;
-    }
+    } */
 
 /* Media Querie Contacto TABLET */
 
