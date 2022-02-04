@@ -53,51 +53,61 @@
     <main class="main_contacto">
         <section class="section_contacto">
             <form class="form_contacto">
-                <div>
-                    <label for="nombreContacto">NOMBRE</label>
-                    <input type="text" placeholder="Escribe tu nombre" id="nombreContacto">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label" for="nombreContacto">NOMBRE</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" placeholder="Escribe tu nombre" id="nombreContacto">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label" for="mailContacto">EMAIL</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" placeholder="Escribe tu mail" id="mailContacto">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label" for="paiscontacto">PAIS</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" name="pais" id="paiscontacto">
+                            <option value="">Elija su pais</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="venezuela">Venezuela</option>
+                            <option value="españa">España</option>
+                            <option value="estadosunidos">Estados Unidos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label" for="mensajeContacto">MENSAJE</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" placeholder="Escribenos un mensaje" id="mensajeContacto"></textarea>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <input class="col-sm-2 col-form-label" type="checkbox" name="newsletter" id="newsletter">
+                    <div class="col-sm-10">
+                        <label for="newsletter">Marcá esta casilla para suscribirte al newsletter oficial de <span style="font-weight: bold;"> Cuarto Hache </span>y estar al tanto de las ultimas novedades, nuevos lanzamientos y proximos shows.</label>
+                    </div>
                 </div>
                 <div>
-                    <label for="mailContacto">EMAIL</label>
-                    <input type="text" placeholder="Escribe tu mail" id="mailContacto">
-                </div>
-                <div>
-                    <label for="paiscontacto">PAIS</label>
-                    <select name="pais" id="paiscontacto">
-                        <option value="">Elija su pais</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="chile">Chile</option>
-                        <option value="uruguay">Uruguay</option>
-                        <option value="brasil">Brasil</option>
-                        <option value="colombia">Colombia</option>
-                        <option value="venezuela">Venezuela</option>
-                        <option value="españa">España</option>
-                        <option value="estadosunidos">Estados Unidos</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="mensajeContacto">MENSAJE</label>
-                    <textarea placeholder="Escribenos un mensaje" id="mensajeContacto"></textarea>
-                </div>
-                <div>
-                    <input type="checkbox" name="newsletter" id="newsletter">
-                    <label for="newsletter">Marcá esta casilla para suscribirte al newsletter oficial de <span style="font-weight: bold;"> Cuarto Hache </span>y estar al tanto de las ultimas novedades, nuevos lanzamientos y proximos shows.</label>
-                </div>
-                <div>
-                    <input type="reset" value="Borrar todo">
-                    <input type="submit" value="ENVIAR">
+                    <input class="btn btn-outline-danger" type="reset" value="RESET">
+                    <input class="btn btn-outline-success" type="submit" value="SUBMIT">
                 </div>
             </form>
         </section>
     </main>
-    <!-- Inicio del footer -->
+    <!---------------------------- Inicio del footer -------------------------->
     <footer class="footer">
         <div>
             <p>@2022 <span class="textimp">CuartoHache™ </span>es propiedad de <span class="textimp">VeeSounds Records®</span> Buenos Aires. Argentina.</p>
         </div>
     </footer>
-    <!-- Fin del footer -->
+    <!----------------------------- Fin del footer ---------------------------->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
