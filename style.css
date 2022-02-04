@@ -425,6 +425,10 @@ footer {
 
 /* Media Querie Contacto MOBILE*/
 
+    .main_contacto {
+        height: 50rem;
+    }
+
 /* Media Querie Footer MOBILE*/
 
     footer {
