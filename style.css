@@ -263,6 +263,38 @@ body {
     box-shadow: 0 70px 63px -60px #000000;
 }
 
+.popover0 {
+    background-color: #f946ff83;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    z-index: 200;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+}
+.popover1 {
+    background-color: #04027491;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    z-index: 200;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+}
+.popover2 {
+    background-color: #af690085;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    z-index: 200;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+}
+.popover3 {
+    background-color: #00bb098f;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    z-index: 200;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+}
 
 /*CSS Studio*/
 
@@ -326,7 +358,7 @@ body {
 
 
 .main_contacto {
-    height: 40rem;
+    height: 35rem;
 }
 
 .section_contacto {
@@ -339,8 +371,12 @@ body {
 .form_contacto {
     background-color:#0d0d0dd7;
     color: #F2EFC4;
-    height: 300px;
-    width: 500px;
+    height: 28rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
 }
 
 textarea {
@@ -426,7 +462,15 @@ footer {
 /* Media Querie Contacto MOBILE*/
 
     .main_contacto {
-        height: 50rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .form_contacto {
+        
+        height: auto;
     }
 
 /* Media Querie Footer MOBILE*/
