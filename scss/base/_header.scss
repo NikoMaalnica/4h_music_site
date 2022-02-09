@@ -1,0 +1,64 @@
+header{
+    background-color: #0d0d0dd7;
+    .navbar {
+        max-height: 4rem;
+            ul{
+                list-style: none;
+                gap: 20px;
+                .linkNav {
+                    color: #F2EFC4;
+                    font-family: 'Quicksand', sans-serif;
+                    transition: all 0.3s ease 0s;
+                    &:hover {
+                        color: #F2561D;
+                    }
+                }
+            }
+        .redes {
+            display: flex;
+            gap: 50px;
+            i {
+                color: #F2EFC4;
+                font-size: 30px;
+                transition: all 0.3s ease 0s;
+            }
+            #logoYoutube:hover {
+                color: #c4302b;
+            }
+            #logoSpotify:hover {
+                color: #1DB954;
+            }
+            #logoInstagram:hover {
+                color: #E1306C;
+            }
+            #logoFacebook:hover {
+                color: #4267B2;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .navbar{
+        max-height:initial !important;
+        .collapse:not(.show) {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 991px){
+    .navbar{
+        max-height: initial;
+        width: 50%;
+        .collapse:not(.show) {
+            display: none;
+        }
+        .imagen_logo {
+            display: none;
+        }
+        .redes {
+            margin-left: 4rem;
+        }
+    }
+}

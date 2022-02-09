@@ -1,0 +1,53 @@
+.carousel {
+    width: 50rem;
+    margin-top: 2rem;
+    .carousel-inner {
+        img {
+            margin: auto;
+        }
+        .carousel-item {
+            img {
+                height: 80vh;
+                object-fit: cover;
+            }
+        }
+    }
+    
+}
+
+.titulo_prod {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    h3 {
+        color:#F2EFC4;
+        font-family: 'Quicksand', sans-serif;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-weight: 600
+    }
+}
+
+.section_prod {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    .imagen_herix {
+        object-fit: cover;
+    }
+    .imagen_shaman {
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .section_studio {
+        display: flex;
+        justify-content: center;
+        .carousel {
+            width: 25rem;
+            .carousel-inner .carousel-item img {
+                height: 50vh;
+                object-fit: cover;
+            }
+        }
+    }
+}
