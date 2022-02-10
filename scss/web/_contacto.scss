@@ -6,8 +6,8 @@
         align-items: center;
         height: 500px;
         .form_contacto {
-            background-color:#0d0d0dd7;
-            color: #F2EFC4;
+            background-color:$back_color;
+            color: $light_color;
             height: 28rem;
             width: 35rem;
             display: flex;

@@ -1,7 +1,7 @@
 footer{
-    background-color: #0d0d0dd7;
+    background-color: $back_color;
     font-family: 'Quicksand', sans-serif;
-    color: #F2561D;
+    color: $main_color;
     line-height: 50px;
     display: flex;
     justify-content: center;
@@ -12,9 +12,9 @@ footer{
 
 @media only screen and (max-width:576px) {
     footer {
-        background-color: #0d0d0dd7;
+        background-color: $back_color;
         font-family: 'Quicksand', sans-serif;
-        color: #F2561D;
+        color: $main_color;
         line-height: 30px;
         display: flex;
         justify-content: center;
@@ -28,9 +28,9 @@ footer{
 
 @media only screen and (min-width:577px) and (max-width:991px) {
     footer {
-        background-color: #0d0d0dd7;
+        background-color: $back_color;
         font-family: 'Quicksand', sans-serif;
-        color: #F2561D;
+        color: $main_color;
         line-height: 50px;
         display: flex;
         justify-content: center;

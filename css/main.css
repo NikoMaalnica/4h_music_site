@@ -7,7 +7,7 @@ a {
   text-decoration: none; }
 
 body {
-  background-image: url(../../img/cuartohacheback.jpeg);
+  background-image: url(../img/cuartohacheback.jpeg);
   background-size: 100%;
   background-repeat: no-repeat; }
 
@@ -211,20 +211,20 @@ footer {
         align-items: center;
         justify-content: space-around; }
   .container .card0 {
-    background: url(../../img/raiel_insta.jpg) center center no-repeat;
+    background: url(../img/raiel_insta.jpg) center center no-repeat;
     background-size: 400px; }
     .container .card0:hover {
-      background: url(../../img/raiel_insta.jpg) top right no-repeat;
+      background: url(../img/raiel_insta.jpg) top right no-repeat;
       background-size: 500px; }
       .container .card0:hover h2 {
         opacity: 1; }
       .container .card0:hover .fa {
         opacity: 1; }
   .container .card1 {
-    background: url(../../img/paul_insta.jpg) center center no-repeat;
+    background: url(../img/paul_insta.jpg) center center no-repeat;
     background-size: 400px; }
     .container .card1:hover {
-      background: url(../../img/paul_insta.jpg) top left no-repeat;
+      background: url(../img/paul_insta.jpg) top left no-repeat;
       background-size: 500px; }
       .container .card1:hover h2 {
         opacity: 1; }

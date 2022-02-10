@@ -17,7 +17,7 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
             z-index: 200;
             font-family: 'Quicksand', sans-serif;
-            text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+            text-shadow: 0.1em 0.1em 0.1em $light_color;
         }
         .popover1 {
             background-color: #04027491;
@@ -25,7 +25,7 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
             z-index: 200;
             font-family: 'Quicksand', sans-serif;
-            text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+            text-shadow: 0.1em 0.1em 0.1em $light_color;
         }
         .popover2 {
             background-color: #af690085;
@@ -33,7 +33,7 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
             z-index: 200;
             font-family: 'Quicksand', sans-serif;
-            text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+            text-shadow: 0.1em 0.1em 0.1em $light_color;
         }
         .popover3 {
             background-color: #00bb098f;
@@ -41,7 +41,7 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
             z-index: 200;
             font-family: 'Quicksand', sans-serif;
-            text-shadow: 0.1em 0.1em 0.1em #F2EFC4;
+            text-shadow: 0.1em 0.1em 0.1em $light_color;
         }
     }
 }

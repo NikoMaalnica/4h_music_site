@@ -1,16 +1,16 @@
 header{
-    background-color: #0d0d0dd7;
+    background-color: $back_color;
     .navbar {
         max-height: 4rem;
             ul{
                 list-style: none;
                 gap: 20px;
                 .linkNav {
-                    color: #F2EFC4;
+                    color: $light_color;
                     font-family: 'Quicksand', sans-serif;
                     transition: all 0.3s ease 0s;
                     &:hover {
-                        color: #F2561D;
+                        color: $main_color;
                     }
                 }
             }
@@ -18,7 +18,7 @@ header{
             display: flex;
             gap: 50px;
             i {
-                color: #F2EFC4;
+                color: $light_color;
                 font-size: 30px;
                 transition: all 0.3s ease 0s;
             }

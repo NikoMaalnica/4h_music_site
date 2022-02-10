@@ -31,7 +31,7 @@
                 border: 1px solid white
             }
             h2 {
-                color: #F2EFC4;
+                color: $light_color;
                 font-family: 'Quicksand', sans-serif;
                 font-size: 1.5rem;
                 text-shadow: 0.1em 0.1em 0.2em black;
@@ -43,16 +43,16 @@
             .fa {
                 opacity: 0;
                 transition: opacity 1s;
-                color: #F2EFC4;
+                color: $light_color;
                 transition: all 1s ease 0s;
                 &:hover{
-                    text-shadow: 0.1em 0.1em 0.2em #F2EFC4;
+                    text-shadow: 0.1em 0.1em 0.2em $light_color;
                 }
             }
             .icons {
                 position: absolute;
-                fill: #F2EFC4;
-                color: #F2EFC4;
+                fill: $light_color;
+                color: $light_color;
                 height: 130px;
                 top: 226px;
                 width: 50px;
@@ -65,10 +65,10 @@
         }
     }
     .card0 {
-        background: url(../../img/raiel_insta.jpg) center center no-repeat;
+        background: url(../img/raiel_insta.jpg) center center no-repeat;
         background-size: 400px;
         &:hover {
-            background: url(../../img/raiel_insta.jpg) top right no-repeat;
+            background: url(../img/raiel_insta.jpg) top right no-repeat;
             background-size: 500px;
             h2 {
                 opacity: 1;
@@ -79,10 +79,10 @@
         }
     }
     .card1 {
-        background: url(../../img/paul_insta.jpg) center center no-repeat;
+        background: url(../img/paul_insta.jpg) center center no-repeat;
         background-size: 400px;
         &:hover {
-            background: url(../../img/paul_insta.jpg) top left no-repeat;
+            background: url(../img/paul_insta.jpg) top left no-repeat;
             background-size: 500px;
             h2 {
                 opacity: 1;
