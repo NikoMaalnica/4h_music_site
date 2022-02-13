@@ -22,17 +22,10 @@ header{
                 font-size: 30px;
                 transition: all 0.3s ease 0s;
             }
-            #logoYoutube:hover {
-                color: #c4302b;
-            }
-            #logoSpotify:hover {
-                color: #1DB954;
-            }
-            #logoInstagram:hover {
-                color: #E1306C;
-            }
-            #logoFacebook:hover {
-                color: #4267B2;
+            @each $social_logo, $color in $social_media {
+                #logo#{$social_logo}:hover{
+                    color: $color
+                }
             }
         }
     }
