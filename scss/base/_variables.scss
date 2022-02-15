@@ -12,3 +12,31 @@ $social_media: (
     Instagram:#E1306C,
     Facebook:#4267B2,
 );
+
+/* Extends */
+
+%flex_row_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+};
+
+%flex_column_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+};
+
+/* Mixin */
+
+@mixin mediaQuery_mobile {
+    @media only screen and (max-width:576px) {
+        @content
+    }
+};
+
+@mixin mediaQuery_tablet {
+    @media only screen and (min-width:577px) and (max-width:991px) {
+        @content
+    }
+};

@@ -38,7 +38,7 @@
     }
 }
 
-@media only screen and (max-width:576px) {
+@include mediaQuery_mobile {
     .section_studio {
         display: flex;
         justify-content: center;

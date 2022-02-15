@@ -1,6 +1,8 @@
 Agregue keywords en cada HTML (Algunos se repiten, y otros son personalizados de cada seccion).
+Se añadió tambien open graph
 Agregue una descripcion distinta a cada pagina del site.
 Modifique el título de cada seccion para que este mas estilizado.
 En SASS agregue un partial de variables, el cual cuenta con variables para la paleta de colores utilizada en el sitio.
 Agregue ademas un MAP, que cuenta con los colores que se van a utilizar cuando se haga un Hover sobre los logos de las redes sociales.
-
+Añadi Extends con flexbox row y column para la pagina de contacto.
+Por ultimo agregue mixin para las media queries y los añadi en todas las paginas usando include.

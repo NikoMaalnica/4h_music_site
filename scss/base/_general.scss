@@ -14,14 +14,14 @@ body {
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width:576px) {
+@include mediaQuery_mobile {
     body {
         background-position-y: 80px;
         background-size: 100%;
     }
 }
 
-@media only screen and (min-width:577px) and (max-width:991px) {
+@include mediaQuery_tablet {
     body {
         background-position-y: 60px;
     }

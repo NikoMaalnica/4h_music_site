@@ -1,5 +1,17 @@
 /* Variables */
 /* Maps */
+/* Extends */
+.main_contacto .section_contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.main_contacto .section_contacto .form_contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* Mixin */
 * {
   margin: 0%;
   padding: 0%;
@@ -366,8 +378,6 @@ footer {
 .main_contacto {
   height: 35rem; }
   .main_contacto .section_contacto {
-    display: flex;
-    justify-content: center;
     align-items: center;
     height: 500px; }
     .main_contacto .section_contacto .form_contacto {
@@ -375,9 +385,6 @@ footer {
       color: #F2EFC4;
       height: 28rem;
       width: 35rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       padding: 1rem; }
       .main_contacto .section_contacto .form_contacto textarea {
         width: 100%;

@@ -1,8 +1,7 @@
 .main_contacto {
     height: 35rem;
     .section_contacto {
-        display: flex;
-        justify-content: center;
+        @extend %flex_row_center;
         align-items: center;
         height: 500px;
         .form_contacto {
@@ -10,9 +9,7 @@
             color: $light_color;
             height: 28rem;
             width: 35rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @extend %flex_column_center;
             padding: 1rem;
             textarea {
                 width: 100%;
@@ -22,7 +19,7 @@
     }
 }
 
-@media only screen and (max-width:576px) {
+@include mediaQuery_mobile {
     .main_contacto {
         height: 40rem;
         display: flex;

@@ -46,7 +46,7 @@
     }
 }
 
-@media only screen and (max-width:576px) {
+@include mediaQuery_mobile {
     .coverSingles {
         flex-direction: column;
         align-items: center;
@@ -56,7 +56,7 @@
     }
 }
 
-@media only screen and (min-width:577px) and (max-width:991px) {
+@include mediaQuery_tablet {
     .coverSingles {
         flex-direction: row;
         flex-wrap: wrap;

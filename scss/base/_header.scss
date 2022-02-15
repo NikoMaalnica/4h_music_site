@@ -31,7 +31,7 @@ header{
     }
 }
 
-@media only screen and (max-width: 576px){
+@include mediaQuery_mobile {
     .navbar{
         max-height:initial !important;
         .collapse:not(.show) {
@@ -40,7 +40,7 @@ header{
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 991px){
+@include mediaQuery_tablet {
     .navbar{
         max-height: initial;
         width: 50%;
