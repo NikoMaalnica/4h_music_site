@@ -1,9 +1,9 @@
-.mainIndex {
+.sectionIndex {
     display: flex;
     justify-content: center;
     .div_video {
-        margin-top: 150px;
-        margin-bottom: 150px;
+        margin-top: 300px;
+        margin-bottom: 25px;
         --borderWidth: 3px;
         background: #1D1F20;
         position: relative;
@@ -20,6 +20,61 @@
             z-index: -1;
             animation: animatedgradient 3s ease alternate infinite;
             background-size: 300% 300%;
+        }
+    }
+}
+.news_title {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    transform: translate3d(0, 0, 0);
+    backdrop-filter: saturate(180%) blur(40px);
+    background-color: rgba(255, 255, 255, 0.096);
+    border: solid 2px transparent;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    h2 {
+        color: $light_color;
+        font-family: 'Quicksand', sans-serif;
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+}
+
+.section_news {
+    height: 25rem;
+    .article_news {
+        width: 100%;
+        :hover {
+            cursor: pointer;
+        }
+        .card {
+            height:25rem;
+            img {
+                max-height: 100%;
+                object-fit: cover;
+            }
+            h5 {
+                text-shadow: 0.1em 0.1em 0.2em black;
+            }
+            p {
+                text-shadow: 0.1em 0.1em 0.2em black;
+            }
+        }
+    }
+}
+
+.modal-glass {
+    transform: translate3d(0, 0, 0);
+    backdrop-filter: saturate(180%) blur(40px);
+    background-color: rgba(255, 255, 255, 0.096);
+    border: solid 2px transparent;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    .modal-header {
+        border: none;
+    }
+    .modal-body {
+        width: 100%;
+        .carousel {
+            width: fit-content;
         }
     }
 }
@@ -40,11 +95,20 @@
     .div_video {
         width: 95%;
     }
-    .mainIndex iframe {
+    .sectionIndex iframe {
         width:100%;
         padding: 0%;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    .section_news {
+        height: 15rem;
+        .article_news{
+            width: 100%;
+            .card {
+                height: fit-content;
+            }
+        }
     }
 }
 
@@ -52,10 +116,13 @@
     .div_video {
         width: 75%;
     }
-    .mainIndex iframe {
+    .sectionIndex iframe {
         width:100%;
         padding: 0%;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    .section_news .article_news .card {
+        height: fit-content;
     }
 }

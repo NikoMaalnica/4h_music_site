@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="body_index">
+<body>
     <!--------------- Inicio del Header ------------------->
     <header class="header sticky-lg-top sticky-md-top">
         <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
@@ -58,9 +58,62 @@
         </nav>
     </header>
     <!---------------- Fin del Header ----------------->
-    <main class="mainIndex">
-        <div class="div_video shadow-lg">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lMTV6kl3i9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video_index"></iframe>
+    <main>
+        <section class="sectionIndex">
+            <div class="div_video shadow-lg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lMTV6kl3i9A?mute=1&autoplay=1&controls=2&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video_index"></iframe>
+            </div>
+        </section>
+        <div class="news_title shadow-lg p-3 mb-5 bg-light bg-opacity-25 rounded">
+            <h2>LASTEST NEWS</h2>
+        </div>
+        <section class="section_news m-5">
+            <article class="article_news shadow-lg" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <div class="card bg-dark text-white">
+                    <img src="./img/cuartohachenews.jpg" class="card-img" alt="foto de la sesion de CuartoHache">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Domingo 30/01/2022 - Backstage "NOS VAMOS" | CuartoHache™</h5>
+                        <p class="card-text">Conocé todo el detrás de escena del nuevo videoclip "NOS VAMOS" en el estudio de filmación ESTUDIO FAN.</p>
+                        <p class="card-text"><small class="text-muted">Ph: Julia Siarri <i id="logoInstagram" class="bi bi-instagram"></i> juliasiarri</small></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--------------------- Modal -------------------->
+        <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered shadow-lg">
+                <div class="modal-content modal-glass">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselNewsFade" class="carousel slide carousel-fade m-0" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/cuartohachenews.jpg" class="d-block w-100" alt="Foto del backstage">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/cuartohachenews2.jpg" class="d-block w-100" alt="Foto del backstage">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/cuartohachenews3.jpg" class="d-block w-100" alt="Foto del backstage">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/cuartohachenews4.jpg" class="d-block w-100" alt="Foto del backstage">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewsFade" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselNewsFade" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!--------------------- Inicio del footer -------------------->

@@ -9,9 +9,10 @@ a{
 }
 
 body {
-    background-image:url(../img/cuartohacheback.jpeg);
+    background:url(../img/cuartohacheback.jpg), linear-gradient(#F2EFC4,#F2561D,#0d0d0d);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-blend-mode:multiply;
 }
 
 @include mediaQuery_mobile {

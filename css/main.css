@@ -21,9 +21,10 @@ a {
   text-decoration: none; }
 
 body {
-  background-image: url(../img/cuartohacheback.jpeg);
+  background: url(../img/cuartohacheback.jpg), linear-gradient(#F2EFC4, #F2561D, #0d0d0d);
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-blend-mode: multiply; }
 
 @media only screen and (max-width: 576px) {
   body {
@@ -116,17 +117,17 @@ footer {
   .textimp {
     font-weight: 600; } }
 
-.mainIndex {
+.sectionIndex {
   display: flex;
   justify-content: center; }
-  .mainIndex .div_video {
-    margin-top: 150px;
-    margin-bottom: 150px;
+  .sectionIndex .div_video {
+    margin-top: 300px;
+    margin-bottom: 25px;
     --borderWidth: 3px;
     background: #1D1F20;
     position: relative;
     border-radius: var(--borderWidth); }
-    .mainIndex .div_video:after {
+    .sectionIndex .div_video:after {
       content: '';
       position: absolute;
       top: calc(-1 * var(--borderWidth));
@@ -139,6 +140,49 @@ footer {
       animation: animatedgradient 3s ease alternate infinite;
       background-size: 300% 300%; }
 
+.news_title {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  transform: translate3d(0, 0, 0);
+  backdrop-filter: saturate(180%) blur(40px);
+  background-color: rgba(255, 255, 255, 0.096);
+  border: solid 2px transparent;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03); }
+  .news_title h2 {
+    color: #F2EFC4;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em black; }
+
+.section_news {
+  height: 25rem; }
+  .section_news .article_news {
+    width: 100%; }
+    .section_news .article_news :hover {
+      cursor: pointer; }
+    .section_news .article_news .card {
+      height: 25rem; }
+      .section_news .article_news .card img {
+        max-height: 100%;
+        object-fit: cover; }
+      .section_news .article_news .card h5 {
+        text-shadow: 0.1em 0.1em 0.2em black; }
+      .section_news .article_news .card p {
+        text-shadow: 0.1em 0.1em 0.2em black; }
+
+.modal-glass {
+  transform: translate3d(0, 0, 0);
+  backdrop-filter: saturate(180%) blur(40px);
+  background-color: rgba(255, 255, 255, 0.096);
+  border: solid 2px transparent;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03); }
+  .modal-glass .modal-header {
+    border: none; }
+  .modal-glass .modal-body {
+    width: 100%; }
+    .modal-glass .modal-body .carousel {
+      width: fit-content; }
+
 @keyframes animatedgradient {
   0% {
     background-position: 0% 50%; }
@@ -150,20 +194,28 @@ footer {
 @media only screen and (max-width: 576px) {
   .div_video {
     width: 95%; }
-  .mainIndex iframe {
+  .sectionIndex iframe {
     width: 100%;
     padding: 0%;
     margin-left: 0%;
-    margin-right: 0%; } }
+    margin-right: 0%; }
+  .section_news {
+    height: 15rem; }
+    .section_news .article_news {
+      width: 100%; }
+      .section_news .article_news .card {
+        height: fit-content; } }
 
 @media only screen and (min-width: 577px) and (max-width: 991px) {
   .div_video {
     width: 75%; }
-  .mainIndex iframe {
+  .sectionIndex iframe {
     width: 100%;
     padding: 0%;
     margin-left: 0%;
-    margin-right: 0%; } }
+    margin-right: 0%; }
+  .section_news .article_news .card {
+    height: fit-content; } }
 
 .container {
   max-height: 800px;
@@ -226,7 +278,7 @@ footer {
         justify-content: space-around; }
   .container .card0 {
     background: url(../img/raiel_insta.jpg) center center no-repeat;
-    background-size: 400px; }
+    background-size: 300px; }
     .container .card0:hover {
       background: url(../img/raiel_insta.jpg) top right no-repeat;
       background-size: 500px; }
@@ -236,14 +288,17 @@ footer {
         opacity: 1; }
   .container .card1 {
     background: url(../img/paul_insta.jpg) center center no-repeat;
-    background-size: 400px; }
+    background-size: 300px; }
     .container .card1:hover {
-      background: url(../img/paul_insta.jpg) top left no-repeat;
+      background: url(../img/paul_insta.jpg) top right no-repeat;
       background-size: 500px; }
       .container .card1:hover h2 {
         opacity: 1; }
       .container .card1:hover .fa {
         opacity: 1; }
+
+.section_bio .card {
+  background: rgba(245, 245, 245, 0.932); }
 
 @media only screen and (max-width: 576px) {
   .container {
@@ -350,7 +405,12 @@ footer {
 .titulo_prod {
   display: flex;
   justify-content: center;
-  margin: 3rem; }
+  margin: 3rem;
+  transform: translate3d(0, 0, 0);
+  backdrop-filter: saturate(180%) blur(40px);
+  background-color: rgba(255, 255, 255, 0.096);
+  border: solid 2px transparent;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03); }
   .titulo_prod h3 {
     color: #F2EFC4;
     font-family: 'Quicksand', sans-serif;
