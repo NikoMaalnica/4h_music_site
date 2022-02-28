@@ -28,7 +28,7 @@
         color:#F2EFC4;
         font-family: 'Quicksand', sans-serif;
         text-shadow: 0.1em 0.1em 0.2em black;
-        font-weight: 600
+        cursor: default;
     }
 }
 
@@ -53,6 +53,16 @@
                 height: 50vh;
                 object-fit: cover;
             }
+        }
+    }
+}
+
+@include mediaQuery_tablet {
+    .section_prod{
+        img {
+            height: 100%;
+            object-fit: cover;
+            /* border: blue solid 5px; */
         }
     }
 }

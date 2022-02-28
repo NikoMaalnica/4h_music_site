@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Bienvenidos a la pagina oficial de CuartoHache™. Enterate de los ultimos lanzamientos, novedeades, y proximos shows.">
     <meta property="og:url" content="https://nikomaalnica.github.io/4h_music_site/index.html">
-    <meta property="og:image" content="https://imgkub.com/images/2022/02/15/cuartohachegraph.jpg">
+    <meta property="og:image" content="https://imgkub.com/images/2022/03/01/cuartohachegraph.jpg">
     <title>4to Hache™ Official</title>
     <link rel="icon" href="./img/logo_naranja.png" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -25,7 +25,7 @@
 <body>
     <!--------------- Inicio del Header ------------------->
     <header class="header sticky-lg-top sticky-md-top">
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark">
             <div class="container-fluid row d-lg-flex">
                 <img class="imagen_logo col-lg-4 col-10 order-lg-1" src="./img/logo_negro3.png" width="250px" alt="logo negro">
                 <button class="navbar-toggler col-2 d-sm-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav, #navbarNavRedes" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,27 +64,37 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lMTV6kl3i9A?mute=1&autoplay=1&controls=2&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video_index"></iframe>
             </div>
         </section>
-        <div class="news_title shadow-lg p-3 mb-5 bg-light bg-opacity-25 rounded">
-            <h2>LASTEST NEWS</h2>
+        <div class="news_title shadow-lg mx-3 mx-md-5 p-3 mb-5 bg-light bg-opacity-25 rounded">
+            <h2>LATEST NEWS</h2>
         </div>
-        <section class="section_news m-5">
-            <article class="article_news shadow-lg" data-bs-toggle="modal" data-bs-target="#newsModal">
+        <section class="section_news m-1 m-md-5">
+            <article class="article_news shadow mb-5" data-bs-toggle="modal" data-bs-target="#newsModal">
                 <div class="card bg-dark text-white">
                     <img src="./img/cuartohachenews.jpg" class="card-img" alt="foto de la sesion de CuartoHache">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Domingo 30/01/2022 - Backstage "NOS VAMOS" | CuartoHache™</h5>
                         <p class="card-text">Conocé todo el detrás de escena del nuevo videoclip "NOS VAMOS" en el estudio de filmación ESTUDIO FAN.</p>
-                        <p class="card-text"><small class="text-muted">Ph: Julia Siarri <i id="logoInstagram" class="bi bi-instagram"></i> juliasiarri</small></p>
+                        <p class="card-text texto_ph"><small class="text-muted">Ph: Julia Siarri | <i id="logoInstagram" class="bi bi-instagram"></i> juliasiarri</small></p>
+                    </div>
+                </div>
+            </article>
+            <article class="article_news2 shadow mb-5" data-bs-toggle="modal" data-bs-target="#newsModal2">
+                <div class="card bg-dark text-white">
+                    <img src="./img/cuartohachenota.png" class="card-img" alt="imagen de la nota de CuartoHache">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">CuartoHache forma parte del nuevo proyecto de ALIZZZ "Desclasificados"</h5>
+                        <p class="card-text">Entrá y enterate como el dúo llego a formar parte del nuevo proyecto de unos de los productores mas influyentes de España.</p>
+                        <p class="card-text texto_nota"><small class="text-muted">Nota | Los 40 Principales</small></p>
                     </div>
                 </div>
             </article>
         </section>
-        <!--------------------- Modal -------------------->
+        <!--------------------- Modals --------------------->
         <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered shadow-lg">
                 <div class="modal-content modal-glass">
                     <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div id="carouselNewsFade" class="carousel slide carousel-fade m-0" data-bs-ride="carousel">
@@ -115,9 +125,21 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="newsModal2" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered shadow-lg">
+                <div class="modal-content modal-glass">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="500px" src="https://los40.com/los40/2020/07/06/musica/1594031649_503023.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!--------------------- Inicio del footer -------------------->
-    <footer class="footer">
+    <footer class="footer border-top border-1 border-dark">
         <div>
             <p>@2022 <span class="textimp">CuartoHache™ </span>es propiedad de <span class="textimp">VeeSounds Records®</span> Buenos Aires. Argentina.</p>
         </div>

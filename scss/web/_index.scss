@@ -36,18 +36,40 @@
         color: $light_color;
         font-family: 'Quicksand', sans-serif;
         text-shadow: 0.1em 0.1em 0.2em black;
+        cursor: default;
     }
 }
 
 .section_news {
-    height: 25rem;
+    height: 45rem;
     .article_news {
         width: 100%;
         :hover {
             cursor: pointer;
         }
+        overflow: hidden;
         .card {
-            height:25rem;
+            height:20rem;
+            img {
+                max-height: 100%;
+                object-fit: cover;
+            }
+            h5 {
+                text-shadow: 0.1em 0.1em 0.2em black;
+            }
+            p {
+                text-shadow: 0.1em 0.1em 0.2em black;
+            }
+        }
+    }
+    .article_news2 {
+        width: 100%;
+        :hover {
+            cursor: pointer;
+        }
+        overflow: hidden;
+        .card {
+            height: 20rem;
             img {
                 max-height: 100%;
                 object-fit: cover;
@@ -76,6 +98,9 @@
         .carousel {
             width: fit-content;
         }
+        iframe {
+            background-color: whitesmoke;
+        }
     }
 }
 
@@ -102,11 +127,28 @@
         margin-right: 0%;
     }
     .section_news {
-        height: 15rem;
+        height: 35rem;
         .article_news{
             width: 100%;
             .card {
                 height: fit-content;
+                .texto_ph {
+                    font-weight: bolder;
+                }
+            }
+        }
+        .article_news2{
+            width: 100%;
+            .card {
+                height: fit-content;
+                height: 14.5rem;
+                img {
+                    height: 14.5rem;
+                }
+                .texto_nota{
+                    font-weight: bolder;
+                    background:linear-gradient(90deg,$back_color, rgba(0, 0, 0, 0));
+                }
             }
         }
     }
@@ -122,7 +164,25 @@
         margin-left: 0%;
         margin-right: 0%;
     }
-    .section_news .article_news .card {
-        height: fit-content;
+    .section_news {
+        .article_news .card {
+            height: fit-content;
+            .texto_ph {
+                font-weight: bolder;
+            }
+        }
+        .article_news2 { 
+            height: 20rem;
+            .card {
+                height: fit-content;
+                img {
+                    height: 20rem;
+                }
+                .texto_nota{
+                    font-weight: bolder;
+                    background:linear-gradient(90deg,$back_color,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+                }
+            }
+        }
     }
 }
